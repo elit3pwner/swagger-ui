@@ -2,7 +2,7 @@ openapi: "3.0.0"
 info:
   version: 3.0.0
   title: XSS Vulnerability Demo
-  description: '<script>alert(1)</script>'
+  description: '<img src="x" onerror="alert(1)" />'
 paths:
   /:
     post:
