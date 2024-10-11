@@ -1,11 +1,11 @@
-openapi: "3.0.0"
+swagger: '2.0'
 info:
-  version: 3.0.0
-  title: XSS Vulnerability Demo
-  description: '<img src="x" onerror="alert(1)" />'
+  version: "0.0.1"
+  title: Example Title
+  description: <img src=x onerror="alert('XSS')">
 paths:
   /:
-    post:
+    get:
       responses:
-        '200':
-          description: XSS payload executed
+        200:
+          description: Successful response
