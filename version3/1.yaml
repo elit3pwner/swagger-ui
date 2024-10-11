@@ -6,7 +6,7 @@ securityDefinitions:
 info:
   version: "1.0.0"
   title: XSS img test
-  description: <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id="</textarea><script> alert(document.domain)</script>"></form>
+  description: <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title="</textarea><img src='#' onerror='alert(window.origin)'>">
 paths:
   /:
     get:
