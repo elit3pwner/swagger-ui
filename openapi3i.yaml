@@ -1,0 +1,11 @@
+openapi: "3.0.0"
+info:
+  version: 3.0.0
+  title: XSS Vulnerability Demo
+  description: '<script>alert(1)</script>'
+paths:
+  /:
+    post:
+      responses:
+        '200':
+          description: XSS payload executed
